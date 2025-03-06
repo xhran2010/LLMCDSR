@@ -1,9 +1,10 @@
 # LLMCDSR
-This is the implementation of the TOIS submission "LLMCDSR: Leveraging Large Language Models for Cross-Domain Sequential Recommendation"
+This is the official implementation of the TOIS paper "LLMCDSR: Leveraging Large Language Models for Cross-Domain Sequential Recommendation"
 
 ## Requirements
 - torch == 2.0.1
 - transformers == 4.31.0
+- higher == 0.2.1
 
 ## Data
 The processed data used in our work (i.e., Movie-Book and Food-kitchen) are in `./data`.
@@ -48,4 +49,16 @@ After that, copy the trained parameters into `./pretrained_parameters` fold with
 Once having prepared the needed ingradients, one can simply run the code to train the model and evaluate the performance:
 ```shell
 python main.py --dataset={dataset}
+```
+
+## Requirements
+If you find our work useful for your research, please cite:
+```
+@article{xin2025llmcdsr,
+  title={LLMCDSR: Enhancing Cross-Domain Sequential Recommendation with Large Language Models},
+  author={Xin, Haoran and Sun, Ying and Wang, Chao and Xiong, Hui},
+  journal={ACM Transactions on Information Systems},
+  year={2025},
+  publisher={ACM New York, NY}
+}
 ```
